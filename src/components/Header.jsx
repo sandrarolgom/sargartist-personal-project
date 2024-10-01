@@ -6,10 +6,10 @@ function Header() {
         {/* <img src={logo} alt="logo sargartist"/> */}
         <nav>
           <ul>
-            <Link to="/"><li>home</li></Link>
-            <Link to="/projects"><li>proyectos</li></Link>
-            <Link to="/aboutme"><li>sobre mí</li></Link> 
-            <Link to="/contact"><li>contacto</li></Link>
+          <li><Link to="/">Inicio</Link></li>
+          <li><Link to="/contact">Contacto</Link></li>
+          <li><Link to="/aboutme">Sobre mí</Link></li>
+          <li><Link to="/projects">Proyectos</Link></li>
           </ul>
         </nav>
     </header>

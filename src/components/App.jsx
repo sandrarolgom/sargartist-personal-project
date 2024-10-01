@@ -4,13 +4,11 @@ import Projects from './Projects';
 import AboutMe from './AboutMe';
 import Contact from './Contact';
 import Landing from './Landing';
-import Header from './Header';
 
 function App() {
 
   return (
     <>
-    <Header />
     <Routes>
       <Route path="/"  element={<Landing/>}/>
       <Route path="/projects"  element={<Projects />}/>
