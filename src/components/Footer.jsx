@@ -2,8 +2,8 @@ function Footer() {
   const instagram = "https://www.instagram.com/sargartist/";
   const twitter = "https://x.com/sargartist";
   return (
-    <footer>
-      <ul>
+    <footer className="footer">
+      <ul className="footer__icons">
         <li>
           <a href={instagram}>
             <i className="fa-brands fa-instagram" />
@@ -15,7 +15,7 @@ function Footer() {
           </a>
         </li>
       </ul>
-      <ul>
+      <ul className="footer__name">
         <a href={instagram}>@sargartist</a>
       </ul>
     </footer>

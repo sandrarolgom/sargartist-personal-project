@@ -1,22 +1,20 @@
 import { Link } from "react-router-dom";
-// import logo from "../images/logo1NotBack.png";
+import logo from "../images/logo1NotBack.png";
+
 function Header() {
   return (
-    <header>
-      {/* <img src={logo} alt="logo sargartist"/> */}
+    <header className="header">
+      <Link to="/"><img src={logo} alt="logo" className="header__logo"/></Link>
       <nav>
-        <ul>
-          <li>
-            <Link to="/">Inicio</Link>
+        <ul className="header__list">
+          <li className="header__list--li">
+            <Link to="/contact">contacto</Link>
           </li>
-          <li>
-            <Link to="/contact">Contacto</Link>
+          <li className="header__list--li">
+            <Link to="/aboutme">sobre mí</Link>
           </li>
-          <li>
-            <Link to="/aboutme">Sobre mí</Link>
-          </li>
-          <li>
-            <Link to="/projects">Proyectos</Link>
+          <li className="header__list--li">
+            <Link to="/projects">proyectos</Link>
           </li>
         </ul>
       </nav>
