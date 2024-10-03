@@ -1,6 +1,5 @@
 import Footer from "./Footer";
 import Header from "./Header";
-import PropTypes, { array } from "prop-types";
 
 
 function Projects({arrayFake}) {
@@ -14,11 +13,6 @@ function Projects({arrayFake}) {
             <Footer />
         </div>
     );
-}
-Projects.propTypes={
-    arrayFake: PropTypes.arrayOf(
-        
-    )
 }
 
 export default Projects;
