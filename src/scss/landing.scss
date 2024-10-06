@@ -1,0 +1,19 @@
+.landing{
+    display: flex;
+    flex-direction: column;
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        list-style: none;
+        &--li{
+            font-size:x-large;
+            a {
+                text-decoration: none;
+                color: $fontColor;
+            }        
+        }
+    
+    }
+}

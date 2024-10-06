@@ -1,20 +1,25 @@
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 function Landing() {
     return (
-        <div>
-            <h1>landing</h1>
-            <ul>
-                <li>
-                    <Link to="/contact">Contacto</Link>
+        <div className="landing">
+            <img 
+                src="src/images/logo1NotBack.png"
+                alt=""
+                className="landing__logo" />
+            <ul className="landing__list">
+                <li className="landing__list--li">
+                    <Link to="/projects">proyectos</Link>
                 </li>
-                <li>
-                    <Link to="/aboutme">Sobre mí</Link>
+                <li className="landing__list--li">
+                    <Link to="/contact">contacto</Link>
                 </li>
-                <li>
-                    <Link to="/projects">Proyectos</Link>
+                <li className="landing__list--li">
+                    <Link to="/aboutme">sobre mí</Link>
                 </li>
             </ul>
+            <Footer />
         </div>
     );
 }
