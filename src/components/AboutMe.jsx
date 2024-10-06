@@ -1,20 +1,26 @@
 import Footer from "./Footer";
 import Header from "./Header";
+import profile from "../images/profile.jpg";
 
 function AboutMe() {
     return (
         <>
             <Header />
-            <h1>sobre mí</h1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur iste
-                nostrum impedit, sit neque voluptatum incidunt reiciendis ad accusantium
-                animi laborum dolorem. Minus, quidem eos ex aliquid nisi at harum.
+            <section className="aboutme">
+            <h1 className="aboutme__title">sobre mí</h1>
+            <p className="aboutme__text">
+                Hola! Soy Sandra, ilustradora apasionada por capturar la esencia y personalidad de las mascotas a través de mi trabajo. Desde siempre he sentido una conexión muy especial por los animales y también por el arte así que decidí unir mis dos pasiones y lanzarme a realizar ilustraciones personalizadas de mascotas.
+                        
+            </p>
+            <p className="aboutme__text">
+                Para mí cada obra es como conocer a una nueva mascota por primera vez. La ilusión por la que cada persona viene a mí para poder crear ese recuerdo tan especial me hace sentirme como parte de la familia. ¡Y no hay nada que me emocione más que ver la felicidad en los rostros de quienes ven a sus peluditos plasmados en mis ilustraciones!
             </p>
             <img
-                src="https://w7.pngwing.com/pngs/640/269/png-transparent-silhouette-person-people-icon-animals-logo-head-thumbnail.png"
+                className="aboutme__image"
+                src={profile}
                 alt="photo of @sargartist"
             />
+            </section>
             <Footer />
         </>
     );
