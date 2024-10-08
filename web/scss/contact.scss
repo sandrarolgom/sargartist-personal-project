@@ -1,0 +1,22 @@
+.contact{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        text-align: center;
+        &--message{
+            padding: 0px 40px;
+            line-height: 25px;
+            text-align:center;
+        };
+        &--link{
+            text-decoration: none;
+            background-color: $blackColor;
+            padding: 5px 10px;
+            border-radius: 20px;
+            color: $bkColor;
+            margin: auto;
+        };
+    };    
+};
