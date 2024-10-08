@@ -5,7 +5,7 @@ function Landing() {
     return (
         <div className="landing">
             <img 
-                src="src/images/logo1NotBack.png"
+                src="/images/logo1NotBack.png"
                 alt=""
                 className="landing__logo" />
             <ul className="landing__list">
