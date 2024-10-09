@@ -5,18 +5,18 @@ function Footer() {
     <footer className="footer">
       <ul className="footer__icons">
         <li>
-          <a href={instagram}>
+          <a href={instagram} target="_blank">
             <i className="fa-brands fa-instagram" />
           </a>
         </li>
         <li>
-          <a href={twitter}>
+          <a href={twitter} target="_blank">
             <i className="fa-brands fa-x-twitter" />
           </a>
         </li>
       </ul>
       <ul className="footer__name">
-        <a href={instagram}>@sargartist</a>
+        <a href={instagram} target="_blank">@sargartist</a>
       </ul>
     </footer>
   );

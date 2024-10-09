@@ -1,12 +1,19 @@
 .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &__logo{
         width: 250px;
     }
     &__list{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        font-size: 1.3rem;
         &--li{
             a {
                 text-decoration: none;
-                color: $fontColor;       
+                color: $fontColor;  
             }        
         }
     

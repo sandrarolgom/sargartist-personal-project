@@ -1,18 +1,25 @@
+.test{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
 .landing{
     display: flex;
     flex-direction: column;
+    gap: 30px;
     &__list{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 50px;
+        gap: 70px;
         list-style: none;
         &--li{
-            font-size:x-large;
+            font-size:1.8rem;
             a {
                 text-decoration: none;
                 color: $fontColor;
-            }        
+            }
         }
     
     }

@@ -1,4 +1,7 @@
-.illustration{
-    width: 200px;
-    padding: 10px;
+.illustrations{
+    padding-top: 20px;
+    &__one{
+        width: 200px;
+        padding: 10px;
+    }
 }

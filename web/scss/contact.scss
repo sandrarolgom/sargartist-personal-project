@@ -1,13 +1,19 @@
+.testContact{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 .contact{
+    padding-top: 20px;
     &__container{
         display: flex;
         flex-direction: column;
         gap: 10px;
-
         text-align: center;
+        
         &--message{
             padding: 0px 40px;
-            line-height: 25px;
+            line-height: 40px;
             text-align:center;
         };
         &--link{

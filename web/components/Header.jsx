@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../images/logo1NotBack.png";
 
 function Header() {
@@ -8,13 +8,13 @@ function Header() {
       <nav>
         <ul className="header__list">
         <li className="header__list--li">
-            <Link to="/projects">proyectos</Link>
+            <NavLink to="/projects" className={({ isActive }) => (isActive ? "bold" : undefined)} >proyectos</NavLink>
           </li>
           <li className="header__list--li">
-            <Link to="/aboutme">sobre mí</Link>
+            <NavLink to="/aboutme"  className={({ isActive }) => (isActive ? "bold" : undefined)} >sobre mí</NavLink>
           </li>
           <li className="header__list--li">
-            <Link to="/contact">contacto</Link>
+            <NavLink to="/contact"  className={({ isActive }) => (isActive ? "bold" : undefined)} >contacto</NavLink>
           </li>
         </ul>
       </nav>

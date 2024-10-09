@@ -14,13 +14,15 @@ function Projects() {
         })
 ;    }, []);
 
-    const list = data.map((item, i)=>(<img src={`${path}${item.fileName}`} alt={item.fileName} key={i} className="illustration"/>));
+    const list = data.map((item, i)=>(<img src={`${path}${item.fileName}`} alt={item.fileName} key={i} className="illustrations__one"/>));
     return (
         <div>
-            <Header />            
-            <h1>project</h1>
+            <Header />
+            <main className="illustrations">
+            <h1 className="hidden">project</h1>
             {list}
-            <Footer />
+            </main>            
+           <Footer />
         </div>
     );
 }

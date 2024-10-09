@@ -3,7 +3,8 @@ import Footer from "./Footer";
 
 function Landing() {
     return (
-        <div className="landing">
+        <div className="test">
+            <main  className="landing"> 
             <img 
                 src="/images/logo1NotBack.png"
                 alt=""
@@ -19,6 +20,7 @@ function Landing() {
                     <Link to="/aboutme">sobre mí</Link>
                 </li>
             </ul>
+            </main>
             <Footer />
         </div>
     );

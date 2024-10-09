@@ -6,8 +6,9 @@ function AboutMe() {
     return (
         <>
             <Header />
+            <main>
             <section className="aboutme">
-            <h1 className="aboutme__title">sobre mí</h1>
+            <h1 className="aboutme__title">Sandra Roldán Gómez</h1>
             <p className="aboutme__text">
                 Hola! Soy Sandra, ilustradora apasionada por capturar la esencia y personalidad de las mascotas a través de mi trabajo. Desde siempre he sentido una conexión muy especial por los animales y también por el arte así que decidí unir mis dos pasiones y lanzarme a realizar ilustraciones personalizadas de mascotas.
                         
@@ -21,6 +22,7 @@ function AboutMe() {
                 alt="photo of @sargartist"
             />
             </section>
+            </main>
             <Footer />
         </>
     );
