@@ -1,20 +1,20 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../images/logo1NotBack.png";
 
-function Header() {
+function Header({ headerClass }) {
   return (
-    <header className="header">
-      <Link to="/"><img src={logo} alt="logo" className="header__logo"/></Link>
+    <header className={headerClass}>
+      <Link to="/"><img src={logo} alt="logo" className={`${headerClass}__logo`} /></Link>
       <nav>
-        <ul className="header__list">
-        <li className="header__list--li">
+        <ul className={`${headerClass}__list`}>
+          <li className={`${headerClass}__list--li`}>
             <NavLink to="/projects" className={({ isActive }) => (isActive ? "bold" : undefined)} >proyectos</NavLink>
           </li>
-          <li className="header__list--li">
-            <NavLink to="/aboutme"  className={({ isActive }) => (isActive ? "bold" : undefined)} >sobre mí</NavLink>
+          <li className={`${headerClass}__list--li`}>
+            <NavLink to="/aboutme" className={({ isActive }) => (isActive ? "bold" : undefined)} >sobre mí</NavLink>
           </li>
-          <li className="header__list--li">
-            <NavLink to="/contact"  className={({ isActive }) => (isActive ? "bold" : undefined)} >contacto</NavLink>
+          <li className={`${headerClass}__list--li`}>
+            <NavLink to="/contact" className={({ isActive }) => (isActive ? "bold" : undefined)} >contacto</NavLink>
           </li>
         </ul>
       </nav>

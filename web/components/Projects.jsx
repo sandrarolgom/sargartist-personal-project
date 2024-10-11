@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import Footer from "./Footer";
-import Header from "./Header";
 
 
 function Projects() {
@@ -16,14 +14,10 @@ function Projects() {
 
     const list = data.map((item, i)=>(<img src={`${path}${item.fileName}`} alt={item.fileName} key={i} className="illustrations__one"/>));
     return (
-        <div>
-            <Header />
-            <main className="illustrations">
+        <section className="illustrations">
             <h1 className="hidden">project</h1>
-            {list}
-            </main>            
-           <Footer />
-        </div>
+            {list}      
+        </section>
     );
 }
 
