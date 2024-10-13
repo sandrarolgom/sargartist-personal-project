@@ -1,18 +1,10 @@
-
-
-
-
-
-.test{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: space-between;
-}
 .landing{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    &__logo{
+        width: 400px;
+    }
     &__list{
         display: flex;
         flex-direction: column;
@@ -29,3 +21,4 @@
     
     }
 }
+

@@ -5,14 +5,14 @@ function Projects() {
     const [data, setData] = useState([])
     const path = "./images/illustrations/";
     useEffect(()=>{
-        fetch("http://localhost:8081/illustrations")
+        fetch("http://localhost:8081/projects")
         .then(response=>response.json())
         .then((data)=>{
             setData(data.response);
         })
 ;    }, []);
 
-    const list = data.map((item, i)=>(<img src={`${path}${item.fileName}`} alt={item.fileName} key={i} className="illustrations__one"/>));
+    const list = data.map((item)=>(<img src={`${path}${item.fileName}`} alt={item.fileName} key={item.id} className="illustrations__one"/>));
     return (
         <section className="illustrations">
             <h1 className="hidden">project</h1>
