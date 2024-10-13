@@ -5,12 +5,47 @@
     gap: 30px;
     padding-bottom: 20px;
     padding-top: 20px;
-    &__text{
-        padding: 0px 40px;
-        line-height: 25px;
-        text-align:justify;
+    @media (min-width: 768px){
+        flex-direction: row;
+        padding: 30px 50px;
     };
+    @media (min-width: 1200px){
+        padding: 50px 200px;
+    };
+    &__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px 20px;
+        &--title{
+            @media (min-width: 768px){
+                font-size: 1.5rem;
+            };
+            @media (min-width: 1200px){
+                font-size: 2rem;
+            };
+        };
+        &--p{
+            padding: 0px 40px;
+            line-height: 25px;
+            text-align:justify;
+            @media (min-width: 768px){
+                font-size: 1.2rem;
+                line-height: 35px;
+            };
+            @media (min-width: 1200px){
+                font-size: 1.4rem;
+                line-height: 40px;
+                              
+            };
+        };
+    }
+
     &__image{
         width: 250px;
+        @media (min-width: 768px){
+            width: 300px;
+        };
     }
 }
