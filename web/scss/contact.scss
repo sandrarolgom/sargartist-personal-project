@@ -1,8 +1,3 @@
-.testContact{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
 .contact{
     padding-top: 20px;
     &__container{
@@ -10,11 +5,19 @@
         flex-direction: column;
         gap: 10px;
         text-align: center;
-        
+        @media (min-width: 768px){
+            padding: 30px 50px;
+        };
+        @media (min-width: 1200px){
+            padding: 30px 200px;
+        };
         &--message{
             padding: 0px 40px;
             line-height: 40px;
             text-align:center;
+            @media (min-width: 768px){
+                font-size: 1.4rem;
+            };
         };
         &--link{
             text-decoration: none;
@@ -23,6 +26,9 @@
             border-radius: 20px;
             color: $bkColor;
             margin: auto;
+            @media (min-width: 768px){
+                font-size: 1.2rem;
+            };
         };
     };    
 };
