@@ -7,7 +7,7 @@ const api = express();
 api.use(cors());
 api.use(express.json({limit:"100mb"}));
 
-const port = process.env.PORT;
+const port = process.env.PORT || 8081;
 api.listen(port, ()=>{
     console.log(`Server is running in http://localhost:${port}`); 
 });
