@@ -5,7 +5,7 @@ function Projects() {
     const [data, setData] = useState([])
     const path = "./illustrations/";
     useEffect(()=>{
-        fetch("http://localhost:8081/projects")
+        fetch("https://sargartist.onrender.com//projects")
         .then(response=>response.json())
         .then((data)=>{
             setData(data.response);
