@@ -5,6 +5,9 @@
     align-items: center;
     &__logo{
         width: 400px;
+        @media (min-width: 768px){
+            width: 350px;
+        }
     }
     &__list{
         display: flex;
@@ -12,11 +15,20 @@
         align-items: center;
         gap: 70px;
         list-style: none;
+        @media (min-width: 768px){
+            flex-direction: row;
+        }
         &--li{
             font-size:1.8rem;
+            font-weight: bold;
             a {
                 text-decoration: none;
                 color: $fontColor;
+                transition: color 0.3s ease, transform 0.3s ease;
+                // &:hover {
+                //     color: lighten($fontColor, 20%); 
+                //     transform: scale(1.05); 
+                // }
             }
         }
     

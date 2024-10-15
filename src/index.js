@@ -32,6 +32,7 @@ api.get("/projects", async(req, res)=>{
             success: true,
             response: result
         });
+        await conex.end();
     } catch (error) {
         res.status(500).send({
             success:false,
@@ -39,3 +40,9 @@ api.get("/projects", async(req, res)=>{
         });
     } 
 });
+
+const staticServerpath = "./src/public-react";
+api.use(express.static(staticServerpath));
+
+const staticServerpathImg = "./src/public-images";
+api.use(express.static(staticServerpathImg));

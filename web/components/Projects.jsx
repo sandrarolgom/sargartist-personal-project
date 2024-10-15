@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 function Projects() {
     const [data, setData] = useState([])
-    const path = "./images/illustrations/";
+    const path = "./illustrations/";
     useEffect(()=>{
         fetch("http://localhost:8081/projects")
         .then(response=>response.json())

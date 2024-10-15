@@ -9,7 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "jest"
+    "test": "jest",
+    "publish-react": "cd web && npm run build && cd .. && rm -rf ./src/public-react && mv ./web/dist ./src/public-react"
   },
   "jest": {
     "testEnvironment": "jsdom"
@@ -20,7 +21,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
-    "sass": "^1.78.0"
+    "sass": "^1.79.5"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.25.4",
