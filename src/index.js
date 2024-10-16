@@ -26,7 +26,7 @@ async function connectDB(){
 api.get("/projects", async(req, res)=>{
     try {
         const conex = await connectDB();
-        const sql = "SELECT * FROM illustrations";
+        const sql = "SELECT * FROM illustrations ORDER BY date_illustration DESC;";
         const [result] = await conex.query(sql);
         res.status(200).json({
             success: true,
