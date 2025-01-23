@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "../scss/index.scss";
 import Header from "./Header";
 import Landing from "./Landing";
-import Projects from "./Projects";
+import Illustrations from "./Illustrations";
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -26,7 +26,7 @@ function App() {
     <main>
     <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/illustrations" element={<Illustrations />} />
         <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

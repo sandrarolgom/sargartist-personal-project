@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
 
-function Projects() {
+function Illustrations() {
     const [data, setData] = useState([])
     const path = "./illustrations/";
     useEffect(()=>{
-        fetch("https://sargartist.onrender.com/projects")
+        fetch("https://sargartist.onrender.com/Illustrations")
         .then(response=>response.json())
         .then((data)=>{
             setData(data.response);
@@ -21,4 +21,4 @@ function Projects() {
     );
 }
 
-export default Projects;
+export default Illustrations;

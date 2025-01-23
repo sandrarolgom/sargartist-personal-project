@@ -8,7 +8,7 @@ function Header({ headerClass }) {
       <nav>
         <ul className={`${headerClass}__list`}>
           <li className={`${headerClass}__list--li`}>
-            <NavLink to="/projects" className={({ isActive }) => (isActive ? "bold" : undefined)} >ilustraciones</NavLink>
+            <NavLink to="/illustrations" className={({ isActive }) => (isActive ? "bold" : undefined)} >ilustraciones</NavLink>
           </li>
           <li className={`${headerClass}__list--li`}>
             <NavLink to="/aboutme" className={({ isActive }) => (isActive ? "bold" : undefined)} >sobre mí</NavLink>

@@ -23,7 +23,7 @@ async function connectDB(){
     return connection;
 };
 
-api.get("/projects", async(req, res)=>{
+api.get("/illustrations", async(req, res)=>{
     try {
         const conex = await connectDB();
         const sql = "SELECT * FROM illustrations ORDER BY date_illustration DESC;";
