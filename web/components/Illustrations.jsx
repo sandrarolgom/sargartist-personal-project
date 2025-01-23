@@ -12,7 +12,7 @@ function Illustrations() {
         })
 ;    }, []);
 
-    const list = data.map((item)=>(<img src={`${path}${item.fileName}`} alt={item.fileName} key={item.id} title={item.fileName} className="illustrations__one"/>));
+    const list = data.map((item)=>(<img src={`${path}${item.fileName}`} alt={item.fileName} key={item.id} title={item.name} className="illustrations__one"/>));
     return (
         <section className="illustrations">
             <h1 className="hidden">project</h1>
