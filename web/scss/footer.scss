@@ -1,3 +1,4 @@
+@use "./core/variables.scss" as variables;
 .footer{
     display: flex;
     flex-direction: column;
@@ -10,12 +11,12 @@
         list-style: none;
         gap: 10px;
         a{
-            color: $fontColor;
+            color: variables.$fontColor;
         }
     }
     &__name{
         a{
-            color: $fontColor;
+            color: variables.$fontColor;
         }
     }
 }

@@ -1,3 +1,4 @@
+@use "./core/variables.scss" as variables;
 .contact{
     padding-top: 20px;
     &__container{
@@ -21,10 +22,10 @@
         };
         &--link{
             text-decoration: none;
-            background-color: $blackColor;
+            background-color: variables.$blackColor;
             padding: 5px 10px;
             border-radius: 20px;
-            color: $bkColor;
+            color: variables.$bkColor;
             margin: auto;
             @media (min-width: 768px){
                 font-size: 1.2rem;

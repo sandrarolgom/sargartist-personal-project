@@ -1,16 +1,16 @@
-@import "./core/reset.scss";
-@import "./core/variables.scss";
-@import "./header.scss";
-@import "./landing.scss";
-@import "./illustrations.scss";
-@import "./about.scss";
-@import "./contact.scss";
-@import "./footer.scss";
+@use "./core/reset.scss";
+@use "./core/variables.scss" as variables;
+@use "./header.scss";
+@use "./landing.scss";
+@use "./illustrations.scss";
+@use "./about.scss";
+@use "./contact.scss";
+@use "./footer.scss";
 
 
 :root {
-    background-color: $bkColor;
-    color: $fontColor;
+    background-color: variables.$bkColor;
+    color: variables.$fontColor;
 }
 
 body {

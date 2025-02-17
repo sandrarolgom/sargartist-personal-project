@@ -1,4 +1,3 @@
-import React from "react";
 
 const ImageModal = ({ image , closeModal }) => {
     if (!image) return null;
