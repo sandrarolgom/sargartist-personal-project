@@ -1,18 +1,14 @@
-
-const ImageModal = ({ image , closeModal }) => {
-    if (!image) return null;
-    return (
-        <div className="modal" onClick={closeModal}>
-      <img
-        src={image}
-        alt="Imagen ampliada"
-        className="modal__image"
-        onClick={(e) => e.stopPropagation()}
+ 
+function ImageModal({image, closeModal}) {
+  return (
+    <div className="modal">
+      <img 
+        src={image} 
+        alt="Imagen Ampliada"
+        onClick={closeModal}
       />
-      <button className="modal__close" onClick={closeModal}>
-        Cerrar
-      </button>
     </div>
-    );
-};
+  )
+}
+
 export default ImageModal;

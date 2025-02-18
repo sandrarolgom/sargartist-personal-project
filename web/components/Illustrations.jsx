@@ -33,15 +33,18 @@ function Illustrations() {
             key={item.id} 
             title={item.name} 
             className="illustrations__one"
-            onClick={()=> openModal(`${path}${item.fileName}`)}
+            onClick={()=>{openModal(`${path}${item.fileName}`)}}
         />));
-    return (
-        <section className="illustrations">
-            <h1 className="hidden">project</h1>
-            {list} 
-            <ImageModal image={selectedImage} closeModal={closeModal}/>     
-        </section>
-    );
+        return (
+            <>
+                <section className="illustrations">
+                    <h1 className="hidden">project</h1>
+                    {list}
+                </section>
+                {selectedImage && <ImageModal image={selectedImage} closeModal={closeModal} />}
+            </>
+        );
+        
 }
 
 export default Illustrations;
