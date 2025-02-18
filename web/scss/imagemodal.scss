@@ -8,21 +8,9 @@
   align-items: center;
   justify-content: center;
   z-index: 9999;
+  &__image{
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+  }
 }
-
-
-// .modal__image {
-//   max-width: 80%;  /* Puedes ajustar el tamaño de la imagen según lo que necesites */
-//   max-height: 80%;  /* Asegura que la imagen no se desborde de la pantalla */
-//   object-fit: contain;  /* Mantiene la proporción de la imagen */
-// }
-
-// .modal__close {
-//   position: absolute;
-//   top: 10px;
-//   right: 10px;
-//   padding: 10px;
-//   background-color: rgba(255, 255, 255, 0.7);
-//   border: none;
-//   cursor: pointer;
-// }

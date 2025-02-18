@@ -1,11 +1,11 @@
  
 function ImageModal({image, closeModal}) {
   return (
-    <div className="modal">
+    <div className="modal" onClick={closeModal}>
       <img 
         src={image} 
         alt="Imagen Ampliada"
-        onClick={closeModal}
+        className="modal__image"
       />
     </div>
   )
