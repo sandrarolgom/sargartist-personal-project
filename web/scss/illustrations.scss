@@ -4,6 +4,11 @@
     &__one{
         width: 200px;
         padding: 30px 10px 10px 10px;
+        transition: transform 0.5s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.05);
+        }
         @media (min-width : 1200px){
             width: 250px;
         };
